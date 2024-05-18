@@ -4,8 +4,6 @@ import Stripe from 'stripe';
 import { PaymentSessionDto } from './dto/payment-session.dto';
 import { Request, Response } from 'express';
 
-//enpointSecret = 'whsec_QFX28d1PZroTgxF4K1S5OLmudQ1m7Yyr
-
 @Injectable()
 export class PaymentsService {
   private readonly stripe = new Stripe(envs.stripeSecret);
